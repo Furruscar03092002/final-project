@@ -615,20 +615,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9570
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f15244.h: 9570: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"4 main.c
-[; ;main.c: 4: char punto = '.';
+"7 main.c
+[; ;main.c: 7: char punto = '.';
 [v _punto `uc ~T0 @X0 1 e ]
 [i _punto
 -> -> 46 `ui `uc
 ]
-"5
-[; ;main.c: 5: int clear = 0;
+"8
+[; ;main.c: 8: int clear = 0;
 [v _clear `i ~T0 @X0 1 e ]
 [i _clear
 -> 0 `i
 ]
-"6
-[; ;main.c: 6: char* nombres[] = {"0.Harold Murcia","1.Luz Patricia","2.Flor Angela","3.Luz Ster", "4.Mauricio Vargas", "5.Oscar Barrero", "6.Fito", "7.Jose Armando"};
+"9
+[; ;main.c: 9: char* nombres[] = {"0.Harold Murcia","1.Luz Patricia","2.Flor Angela","3.Luz Ster", "4.Mauricio Vargas", "5.Oscar Barrero", "6.Fito", "7.Jose Armando"};
 [v _nombres `*uc ~T0 @X0 -> 8 `i e ]
 [i _nombres
 :U ..
@@ -642,8 +642,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 :s 8C
 ..
 ]
-"7
-[; ;main.c: 7: int estadoBotones[] = {0,0,0,0};
+"10
+[; ;main.c: 10: int estadoBotones[] = {0,0,0,0};
 [v _estadoBotones `i ~T0 @X0 -> 4 `i e ]
 [i _estadoBotones
 :U ..
@@ -653,518 +653,518 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 0 `i
 ..
 ]
-"9
-[; ;main.c: 9: void Inicio(void)
+"12
+[; ;main.c: 12: void Inicio(void)
 [v _Inicio `(v ~T0 @X0 1 ef ]
-"10
-[; ;main.c: 10: {
+"13
+[; ;main.c: 13: {
 {
 [e :U _Inicio ]
 [f ]
-"11
-[; ;main.c: 11:     I2C_Master_Init();
+"14
+[; ;main.c: 14:     I2C_Master_Init();
 [e ( _I2C_Master_Init ..  ]
-"12
-[; ;main.c: 12:     LCD_Init(0x4E);
+"15
+[; ;main.c: 15:     LCD_Init(0x4E);
 [e ( _LCD_Init (1 -> -> 78 `i `uc ]
-"13
-[; ;main.c: 13:     do { LATAbits.LATA2 = 1; } while(0);
+"16
+[; ;main.c: 16:     do { LATAbits.LATA2 = 1; } while(0);
 [e :U 512 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
 [e :U 511 ]
-"14
-[; ;main.c: 14: }
+"17
+[; ;main.c: 17: }
 [e :UE 509 ]
 }
-"16
-[; ;main.c: 16: void pantallaCarga(void)
+"19
+[; ;main.c: 19: void pantallaCarga(void)
 [v _pantallaCarga `(v ~T0 @X0 1 ef ]
-"17
-[; ;main.c: 17: {
+"20
+[; ;main.c: 20: {
 {
 [e :U _pantallaCarga ]
 [f ]
-"18
-[; ;main.c: 18:     LCD_Set_Cursor(1, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"19
-[; ;main.c: 19:     LCD_Write_String("Inicializando");
-[e ( _LCD_Write_String (1 :s 9C ]
 "21
-[; ;main.c: 21:     for (int i = 14; i < 18; i++)
+[; ;main.c: 21:     LCD_Set_Cursor(1, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"22
+[; ;main.c: 22:     LCD_Write_String("Inicializando");
+[e ( _LCD_Write_String (1 :s 9C ]
+"24
+[; ;main.c: 24:     for (int i = 14; i < 18; i++)
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 14 `i ]
 [e $ < _i -> 18 `i 514  ]
 [e $U 515  ]
 [e :U 514 ]
-"22
-[; ;main.c: 22:     {
-{
-"23
-[; ;main.c: 23:         LCD_Set_Cursor(1, i);
-[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> _i `uc ]
-"24
-[; ;main.c: 24:         LCD_Write_Char(punto);
-[e ( _LCD_Write_Char (1 _punto ]
 "25
-[; ;main.c: 25:         _delay((unsigned long)((1000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 25:     {
+{
 "26
-[; ;main.c: 26:     }
+[; ;main.c: 26:         LCD_Set_Cursor(1, i);
+[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> _i `uc ]
+"27
+[; ;main.c: 27:         LCD_Write_Char(punto);
+[e ( _LCD_Write_Char (1 _punto ]
+"28
+[; ;main.c: 28:         _delay((unsigned long)((1000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"29
+[; ;main.c: 29:     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 18 `i 514  ]
 [e :U 515 ]
 }
-"27
-[; ;main.c: 27: }
+"30
+[; ;main.c: 30: }
 [e :UE 513 ]
 }
-"29
-[; ;main.c: 29: void Menu(int entrada)
+"32
+[; ;main.c: 32: void Menu(int entrada)
 [v _Menu `(v ~T0 @X0 1 ef1`i ]
-"30
-[; ;main.c: 30: {
+"33
+[; ;main.c: 33: {
 {
 [e :U _Menu ]
-"29
-[; ;main.c: 29: void Menu(int entrada)
-[v _entrada `i ~T0 @X0 1 r1 ]
-"30
-[; ;main.c: 30: {
-[f ]
-"31
-[; ;main.c: 31:     while (1)
-[e :U 519 ]
 "32
-[; ;main.c: 32:     {
-{
+[; ;main.c: 32: void Menu(int entrada)
+[v _entrada `i ~T0 @X0 1 r1 ]
+"33
+[; ;main.c: 33: {
+[f ]
 "34
-[; ;main.c: 34:         switch (entrada)
-[e $U 522  ]
+[; ;main.c: 34:     while (1)
+[e :U 519 ]
 "35
-[; ;main.c: 35:         {
+[; ;main.c: 35:     {
 {
-"36
-[; ;main.c: 36:             case 0:
-[e :U 523 ]
+"37
+[; ;main.c: 37:         switch (entrada)
+[e $U 522  ]
 "38
-[; ;main.c: 38:                 if (clear == 0)
-[e $ ! == _clear -> 0 `i 524  ]
-"39
-[; ;main.c: 39:                 {
+[; ;main.c: 38:         {
 {
-"40
-[; ;main.c: 40:                     LCD_Clear();
-[e ( _LCD_Clear ..  ]
+"39
+[; ;main.c: 39:             case 0:
+[e :U 523 ]
 "41
-[; ;main.c: 41:                     clear = 1;
-[e = _clear -> 1 `i ]
+[; ;main.c: 41:                 if (clear == 0)
+[e $ ! == _clear -> 0 `i 524  ]
 "42
-[; ;main.c: 42:                 }
+[; ;main.c: 42:                 {
+{
+"43
+[; ;main.c: 43:                     LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"44
+[; ;main.c: 44:                     clear = 1;
+[e = _clear -> 1 `i ]
+"45
+[; ;main.c: 45:                 }
 }
 [e :U 524 ]
-"44
-[; ;main.c: 44:                 LCD_Set_Cursor(1, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"45
-[; ;main.c: 45:                 LCD_Write_String("Listado de docentes");
-[e ( _LCD_Write_String (1 :s 10C ]
-"46
-[; ;main.c: 46:                 LCD_Set_Cursor(2, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "47
-[; ;main.c: 47:                 LCD_Write_String("disponibles...");
-[e ( _LCD_Write_String (1 :s 11C ]
+[; ;main.c: 47:                 LCD_Set_Cursor(1, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "48
-[; ;main.c: 48:                 _delay((unsigned long)((5000)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 48:                 LCD_Write_String("Listado de docentes");
+[e ( _LCD_Write_String (1 :s 10C ]
 "49
-[; ;main.c: 49:                 clear = 0;
-[e = _clear -> 0 `i ]
+[; ;main.c: 49:                 LCD_Set_Cursor(2, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"50
+[; ;main.c: 50:                 LCD_Write_String("disponibles...");
+[e ( _LCD_Write_String (1 :s 11C ]
 "51
-[; ;main.c: 51:                 if (clear == 0)
-[e $ ! == _clear -> 0 `i 525  ]
+[; ;main.c: 51:                 _delay((unsigned long)((5000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "52
-[; ;main.c: 52:                 {
-{
-"53
-[; ;main.c: 53:                     entrada = 1;
-[e = _entrada -> 1 `i ]
+[; ;main.c: 52:                 clear = 0;
+[e = _clear -> 0 `i ]
 "54
-[; ;main.c: 54:                 }
+[; ;main.c: 54:                 if (clear == 0)
+[e $ ! == _clear -> 0 `i 525  ]
+"55
+[; ;main.c: 55:                 {
+{
+"56
+[; ;main.c: 56:                     entrada = 1;
+[e = _entrada -> 1 `i ]
+"57
+[; ;main.c: 57:                 }
 }
 [e :U 525 ]
-"56
-[; ;main.c: 56:             break;
+"59
+[; ;main.c: 59:             break;
 [e $U 521  ]
-"58
-[; ;main.c: 58:             case 1:
-[e :U 526 ]
-"60
-[; ;main.c: 60:                 if (clear == 0)
-[e $ ! == _clear -> 0 `i 527  ]
 "61
-[; ;main.c: 61:                 {
-{
-"62
-[; ;main.c: 62:                     LCD_Clear();
-[e ( _LCD_Clear ..  ]
+[; ;main.c: 61:             case 1:
+[e :U 526 ]
 "63
-[; ;main.c: 63:                     clear = 1;
-[e = _clear -> 1 `i ]
+[; ;main.c: 63:                 if (clear == 0)
+[e $ ! == _clear -> 0 `i 527  ]
 "64
-[; ;main.c: 64:                 }
+[; ;main.c: 64:                 {
+{
+"65
+[; ;main.c: 65:                     LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"66
+[; ;main.c: 66:                     clear = 1;
+[e = _clear -> 1 `i ]
+"67
+[; ;main.c: 67:                 }
 }
 [e :U 527 ]
-"66
-[; ;main.c: 66:                 LCD_Set_Cursor(1, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"67
-[; ;main.c: 67:                 LCD_Write_String(nombres[0]);
-[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 0 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
 "69
-[; ;main.c: 69:                 LCD_Set_Cursor(2, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 69:                 LCD_Set_Cursor(1, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "70
-[; ;main.c: 70:                 LCD_Write_String(nombres[1]);
-[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 1 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+[; ;main.c: 70:                 LCD_Write_String(nombres[0]);
+[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 0 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
 "72
-[; ;main.c: 72:                 LCD_Set_Cursor(3, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 3 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 72:                 LCD_Set_Cursor(2, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "73
-[; ;main.c: 73:                 LCD_Write_String(nombres[2]);
-[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 2 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+[; ;main.c: 73:                 LCD_Write_String(nombres[1]);
+[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 1 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
 "75
-[; ;main.c: 75:                 LCD_Set_Cursor(4, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 4 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 75:                 LCD_Set_Cursor(3, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 3 `i `uc -> -> 1 `i `uc ]
 "76
-[; ;main.c: 76:                 LCD_Write_String(nombres[3]);
-[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 3 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+[; ;main.c: 76:                 LCD_Write_String(nombres[2]);
+[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 2 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
 "78
-[; ;main.c: 78:                 if(!PORTCbits.RC0)
-[e $ ! ! != -> . . _PORTCbits 0 0 `i -> 0 `i 528  ]
+[; ;main.c: 78:                 LCD_Set_Cursor(4, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 4 `i `uc -> -> 1 `i `uc ]
 "79
-[; ;main.c: 79:                 {
-{
-"80
-[; ;main.c: 80:                     estadoBotones[0] = 1;
-[e = *U + &U _estadoBotones * -> -> -> 0 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i ]
+[; ;main.c: 79:                 LCD_Write_String(nombres[3]);
+[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 3 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
 "81
-[; ;main.c: 81:                     _delay((unsigned long)((250)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 81:                 if(!PORTCbits.RC0)
+[e $ ! ! != -> . . _PORTCbits 0 0 `i -> 0 `i 528  ]
 "82
-[; ;main.c: 82:                     clear = 0;
-[e = _clear -> 0 `i ]
+[; ;main.c: 82:                 {
+{
 "83
-[; ;main.c: 83:                     entrada = 3;
-[e = _entrada -> 3 `i ]
+[; ;main.c: 83:                     estadoBotones[0] = 1;
+[e = *U + &U _estadoBotones * -> -> -> 0 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i ]
 "84
-[; ;main.c: 84:                 }
+[; ;main.c: 84:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"85
+[; ;main.c: 85:                     clear = 0;
+[e = _clear -> 0 `i ]
+"86
+[; ;main.c: 86:                     entrada = 3;
+[e = _entrada -> 3 `i ]
+"87
+[; ;main.c: 87:                 }
 }
 [e :U 528 ]
-"85
-[; ;main.c: 85:                 if(!PORTCbits.RC1)
-[e $ ! ! != -> . . _PORTCbits 0 1 `i -> 0 `i 529  ]
-"86
-[; ;main.c: 86:                 {
-{
-"87
-[; ;main.c: 87:                     estadoBotones[1] = 1;
-[e = *U + &U _estadoBotones * -> -> -> 1 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i ]
 "88
-[; ;main.c: 88:                     _delay((unsigned long)((250)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 88:                 if(!PORTCbits.RC1)
+[e $ ! ! != -> . . _PORTCbits 0 1 `i -> 0 `i 529  ]
 "89
-[; ;main.c: 89:                     clear = 0;
-[e = _clear -> 0 `i ]
+[; ;main.c: 89:                 {
+{
 "90
-[; ;main.c: 90:                     entrada = 3;
-[e = _entrada -> 3 `i ]
+[; ;main.c: 90:                     estadoBotones[1] = 1;
+[e = *U + &U _estadoBotones * -> -> -> 1 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i ]
 "91
-[; ;main.c: 91:                 }
+[; ;main.c: 91:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"92
+[; ;main.c: 92:                     clear = 0;
+[e = _clear -> 0 `i ]
+"93
+[; ;main.c: 93:                     entrada = 3;
+[e = _entrada -> 3 `i ]
+"94
+[; ;main.c: 94:                 }
 }
 [e :U 529 ]
-"92
-[; ;main.c: 92:                 if(!PORTCbits.RC3)
-[e $ ! ! != -> . . _PORTCbits 0 3 `i -> 0 `i 530  ]
-"93
-[; ;main.c: 93:                 {
-{
-"94
-[; ;main.c: 94:                     estadoBotones[2] = 1;
-[e = *U + &U _estadoBotones * -> -> -> 2 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i ]
 "95
-[; ;main.c: 95:                     _delay((unsigned long)((250)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 95:                 if(!PORTCbits.RC3)
+[e $ ! ! != -> . . _PORTCbits 0 3 `i -> 0 `i 530  ]
 "96
-[; ;main.c: 96:                     clear = 0;
-[e = _clear -> 0 `i ]
+[; ;main.c: 96:                 {
+{
 "97
-[; ;main.c: 97:                     entrada = 3;
-[e = _entrada -> 3 `i ]
+[; ;main.c: 97:                     estadoBotones[2] = 1;
+[e = *U + &U _estadoBotones * -> -> -> 2 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i ]
 "98
-[; ;main.c: 98:                 }
+[; ;main.c: 98:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"99
+[; ;main.c: 99:                     clear = 0;
+[e = _clear -> 0 `i ]
+"100
+[; ;main.c: 100:                     entrada = 3;
+[e = _entrada -> 3 `i ]
+"101
+[; ;main.c: 101:                 }
 }
 [e :U 530 ]
-"99
-[; ;main.c: 99:                 if(!PORTCbits.RC4)
-[e $ ! ! != -> . . _PORTCbits 0 4 `i -> 0 `i 531  ]
-"100
-[; ;main.c: 100:                 {
-{
-"101
-[; ;main.c: 101:                     estadoBotones[3] = 1;
-[e = *U + &U _estadoBotones * -> -> -> 3 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i ]
 "102
-[; ;main.c: 102:                     _delay((unsigned long)((250)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 102:                 if(!PORTCbits.RC4)
+[e $ ! ! != -> . . _PORTCbits 0 4 `i -> 0 `i 531  ]
 "103
-[; ;main.c: 103:                     clear = 0;
-[e = _clear -> 0 `i ]
+[; ;main.c: 103:                 {
+{
 "104
-[; ;main.c: 104:                     entrada = 3;
-[e = _entrada -> 3 `i ]
+[; ;main.c: 104:                     estadoBotones[3] = 1;
+[e = *U + &U _estadoBotones * -> -> -> 3 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i ]
 "105
-[; ;main.c: 105:                 }
+[; ;main.c: 105:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"106
+[; ;main.c: 106:                     clear = 0;
+[e = _clear -> 0 `i ]
+"107
+[; ;main.c: 107:                     entrada = 3;
+[e = _entrada -> 3 `i ]
+"108
+[; ;main.c: 108:                 }
 }
 [e :U 531 ]
-"107
-[; ;main.c: 107:             break;
+"110
+[; ;main.c: 110:             break;
 [e $U 521  ]
-"109
-[; ;main.c: 109:             case 3:
-[e :U 532 ]
-"111
-[; ;main.c: 111:                 if (clear == 0)
-[e $ ! == _clear -> 0 `i 533  ]
 "112
-[; ;main.c: 112:                 {
-{
-"113
-[; ;main.c: 113:                     LCD_Clear();
-[e ( _LCD_Clear ..  ]
+[; ;main.c: 112:             case 3:
+[e :U 532 ]
 "114
-[; ;main.c: 114:                     clear = 1;
-[e = _clear -> 1 `i ]
+[; ;main.c: 114:                 if (clear == 0)
+[e $ ! == _clear -> 0 `i 533  ]
 "115
-[; ;main.c: 115:                 }
+[; ;main.c: 115:                 {
+{
+"116
+[; ;main.c: 116:                     LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"117
+[; ;main.c: 117:                     clear = 1;
+[e = _clear -> 1 `i ]
+"118
+[; ;main.c: 118:                 }
 }
 [e :U 533 ]
-"117
-[; ;main.c: 117:                 LCD_Set_Cursor(1, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-"118
-[; ;main.c: 118:                 LCD_Write_String("LLamando al docente");
-[e ( _LCD_Write_String (1 :s 12C ]
 "120
-[; ;main.c: 120:                 if(estadoBotones[0] == 1)
-[e $ ! == *U + &U _estadoBotones * -> -> -> 0 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i 534  ]
+[; ;main.c: 120:                 LCD_Set_Cursor(1, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
 "121
-[; ;main.c: 121:                 {
-{
-"122
-[; ;main.c: 122:                     LCD_Set_Cursor(2, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 121:                 LCD_Write_String("LLamando al docente");
+[e ( _LCD_Write_String (1 :s 12C ]
 "123
-[; ;main.c: 123:                     LCD_Write_String(nombres[0]);
-[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 0 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+[; ;main.c: 123:                 if(estadoBotones[0] == 1)
+[e $ ! == *U + &U _estadoBotones * -> -> -> 0 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i 534  ]
+"124
+[; ;main.c: 124:                 {
+{
 "125
-[; ;main.c: 125:                     for (int i = 0; i < 10; i++)
+[; ;main.c: 125:                     LCD_Set_Cursor(2, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"126
+[; ;main.c: 126:                     LCD_Write_String(nombres[0]);
+[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 0 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+"128
+[; ;main.c: 128:                     for (int i = 0; i < 10; i++)
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $ < _i -> 10 `i 535  ]
 [e $U 536  ]
 [e :U 535 ]
-"126
-[; ;main.c: 126:                     {
+"129
+[; ;main.c: 129:                     {
 {
-"127
-[; ;main.c: 127:                         do { LATBbits.LATB7 = ~LATBbits.LATB7; } while(0);
+"130
+[; ;main.c: 130:                         do { LATBbits.LATB7 = ~LATBbits.LATB7; } while(0);
 [e :U 540 ]
 {
 [e = . . _LATBbits 0 4 -> ~ -> . . _LATBbits 0 4 `i `uc ]
 }
 [e :U 539 ]
-"128
-[; ;main.c: 128:                         _delay((unsigned long)((250)*(4000000/4000.0)));
+"131
+[; ;main.c: 131:                         _delay((unsigned long)((250)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"129
-[; ;main.c: 129:                     }
+"132
+[; ;main.c: 132:                     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 10 `i 535  ]
 [e :U 536 ]
 }
-"130
-[; ;main.c: 130:                     estadoBotones[0] = 0;
+"133
+[; ;main.c: 133:                     estadoBotones[0] = 0;
 [e = *U + &U _estadoBotones * -> -> -> 0 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 0 `i ]
-"131
-[; ;main.c: 131:                     entrada = 0;
+"134
+[; ;main.c: 134:                     entrada = 0;
 [e = _entrada -> 0 `i ]
-"132
-[; ;main.c: 132:                 }
+"135
+[; ;main.c: 135:                 }
 }
 [e :U 534 ]
-"133
-[; ;main.c: 133:                 if(estadoBotones[1] == 1)
-[e $ ! == *U + &U _estadoBotones * -> -> -> 1 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i 541  ]
-"134
-[; ;main.c: 134:                 {
-{
-"135
-[; ;main.c: 135:                     LCD_Set_Cursor(2, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "136
-[; ;main.c: 136:                     LCD_Write_String(nombres[1]);
-[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 1 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+[; ;main.c: 136:                 if(estadoBotones[1] == 1)
+[e $ ! == *U + &U _estadoBotones * -> -> -> 1 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i 541  ]
+"137
+[; ;main.c: 137:                 {
+{
 "138
-[; ;main.c: 138:                     for (int i = 0; i < 10; i++)
+[; ;main.c: 138:                     LCD_Set_Cursor(2, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"139
+[; ;main.c: 139:                     LCD_Write_String(nombres[1]);
+[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 1 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+"141
+[; ;main.c: 141:                     for (int i = 0; i < 10; i++)
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $ < _i -> 10 `i 542  ]
 [e $U 543  ]
 [e :U 542 ]
-"139
-[; ;main.c: 139:                     {
+"142
+[; ;main.c: 142:                     {
 {
-"140
-[; ;main.c: 140:                         do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0);
+"143
+[; ;main.c: 143:                         do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0);
 [e :U 547 ]
 {
 [e = . . _LATCbits 0 5 -> ~ -> . . _LATCbits 0 5 `i `uc ]
 }
 [e :U 546 ]
-"141
-[; ;main.c: 141:                         _delay((unsigned long)((250)*(4000000/4000.0)));
+"144
+[; ;main.c: 144:                         _delay((unsigned long)((250)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"142
-[; ;main.c: 142:                     }
+"145
+[; ;main.c: 145:                     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 10 `i 542  ]
 [e :U 543 ]
 }
-"143
-[; ;main.c: 143:                     estadoBotones[1] = 0;
+"146
+[; ;main.c: 146:                     estadoBotones[1] = 0;
 [e = *U + &U _estadoBotones * -> -> -> 1 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 0 `i ]
-"144
-[; ;main.c: 144:                     entrada = 0;
+"147
+[; ;main.c: 147:                     entrada = 0;
 [e = _entrada -> 0 `i ]
-"145
-[; ;main.c: 145:                 }
+"148
+[; ;main.c: 148:                 }
 }
 [e :U 541 ]
-"146
-[; ;main.c: 146:                 if(estadoBotones[2] == 1)
-[e $ ! == *U + &U _estadoBotones * -> -> -> 2 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i 548  ]
-"147
-[; ;main.c: 147:                 {
-{
-"148
-[; ;main.c: 148:                     LCD_Set_Cursor(2, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "149
-[; ;main.c: 149:                     LCD_Write_String(nombres[2]);
-[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 2 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+[; ;main.c: 149:                 if(estadoBotones[2] == 1)
+[e $ ! == *U + &U _estadoBotones * -> -> -> 2 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i 548  ]
+"150
+[; ;main.c: 150:                 {
+{
 "151
-[; ;main.c: 151:                     for (int i = 0; i < 10; i++)
+[; ;main.c: 151:                     LCD_Set_Cursor(2, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"152
+[; ;main.c: 152:                     LCD_Write_String(nombres[2]);
+[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 2 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+"154
+[; ;main.c: 154:                     for (int i = 0; i < 10; i++)
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $ < _i -> 10 `i 549  ]
 [e $U 550  ]
 [e :U 549 ]
-"152
-[; ;main.c: 152:                     {
+"155
+[; ;main.c: 155:                     {
 {
-"153
-[; ;main.c: 153:                         do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
+"156
+[; ;main.c: 156:                         do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0);
 [e :U 554 ]
 {
 [e = . . _LATCbits 0 6 -> ~ -> . . _LATCbits 0 6 `i `uc ]
 }
 [e :U 553 ]
-"154
-[; ;main.c: 154:                         _delay((unsigned long)((250)*(4000000/4000.0)));
+"157
+[; ;main.c: 157:                         _delay((unsigned long)((250)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"155
-[; ;main.c: 155:                     }
+"158
+[; ;main.c: 158:                     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 10 `i 549  ]
 [e :U 550 ]
 }
-"156
-[; ;main.c: 156:                     estadoBotones[2] = 0;
+"159
+[; ;main.c: 159:                     estadoBotones[2] = 0;
 [e = *U + &U _estadoBotones * -> -> -> 2 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 0 `i ]
-"157
-[; ;main.c: 157:                     entrada = 0;
+"160
+[; ;main.c: 160:                     entrada = 0;
 [e = _entrada -> 0 `i ]
-"158
-[; ;main.c: 158:                 }
+"161
+[; ;main.c: 161:                 }
 }
 [e :U 548 ]
-"159
-[; ;main.c: 159:                 if(estadoBotones[3] == 1)
-[e $ ! == *U + &U _estadoBotones * -> -> -> 3 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i 555  ]
-"160
-[; ;main.c: 160:                 {
-{
-"161
-[; ;main.c: 161:                     LCD_Set_Cursor(2, 1);
-[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "162
-[; ;main.c: 162:                     LCD_Write_String(nombres[3]);
-[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 3 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+[; ;main.c: 162:                 if(estadoBotones[3] == 1)
+[e $ ! == *U + &U _estadoBotones * -> -> -> 3 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 1 `i 555  ]
+"163
+[; ;main.c: 163:                 {
+{
 "164
-[; ;main.c: 164:                     for (int i = 0; i < 10; i++)
+[; ;main.c: 164:                     LCD_Set_Cursor(2, 1);
+[e ( _LCD_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"165
+[; ;main.c: 165:                     LCD_Write_String(nombres[3]);
+[e ( _LCD_Write_String (1 *U + &U _nombres * -> -> -> 3 `i `ui `ux -> -> # *U &U _nombres `ui `ux ]
+"167
+[; ;main.c: 167:                     for (int i = 0; i < 10; i++)
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
 [e $ < _i -> 10 `i 556  ]
 [e $U 557  ]
 [e :U 556 ]
-"165
-[; ;main.c: 165:                     {
+"168
+[; ;main.c: 168:                     {
 {
-"166
-[; ;main.c: 166:                         do { LATCbits.LATC7 = ~LATCbits.LATC7; } while(0);
+"169
+[; ;main.c: 169:                         do { LATCbits.LATC7 = ~LATCbits.LATC7; } while(0);
 [e :U 561 ]
 {
 [e = . . _LATCbits 0 7 -> ~ -> . . _LATCbits 0 7 `i `uc ]
 }
 [e :U 560 ]
-"167
-[; ;main.c: 167:                         _delay((unsigned long)((250)*(4000000/4000.0)));
+"170
+[; ;main.c: 170:                         _delay((unsigned long)((250)*(4000000/4000.0)));
 [e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"168
-[; ;main.c: 168:                     }
+"171
+[; ;main.c: 171:                     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 10 `i 556  ]
 [e :U 557 ]
 }
-"169
-[; ;main.c: 169:                     estadoBotones[3] = 0;
+"172
+[; ;main.c: 172:                     estadoBotones[3] = 0;
 [e = *U + &U _estadoBotones * -> -> -> 3 `i `ui `ux -> -> # *U &U _estadoBotones `ui `ux -> 0 `i ]
-"170
-[; ;main.c: 170:                     entrada = 0;
+"173
+[; ;main.c: 173:                     entrada = 0;
 [e = _entrada -> 0 `i ]
-"171
-[; ;main.c: 171:                 }
+"174
+[; ;main.c: 174:                 }
 }
 [e :U 555 ]
-"173
-[; ;main.c: 173:             break;
+"176
+[; ;main.c: 176:             break;
 [e $U 521  ]
-"175
-[; ;main.c: 175:         }
+"178
+[; ;main.c: 178:         }
 }
 [e $U 521  ]
 [e :U 522 ]
@@ -1173,39 +1173,39 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 3 `i 532
  521 ]
 [e :U 521 ]
-"176
-[; ;main.c: 176:     }
+"179
+[; ;main.c: 179:     }
 }
 [e :U 518 ]
 [e $U 519  ]
 [e :U 520 ]
-"177
-[; ;main.c: 177: }
+"180
+[; ;main.c: 180: }
 [e :UE 517 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"178
-[; ;main.c: 178: void main(void)
+"181
+[; ;main.c: 181: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"179
-[; ;main.c: 179: {
+"182
+[; ;main.c: 182: {
 {
 [e :U _main ]
 [f ]
-"181
-[; ;main.c: 181:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"182
-[; ;main.c: 182:     Inicio();
-[e ( _Inicio ..  ]
-"183
-[; ;main.c: 183:     pantallaCarga();
-[e ( _pantallaCarga ..  ]
 "184
-[; ;main.c: 184:     Menu(0);
-[e ( _Menu (1 -> 0 `i ]
+[; ;main.c: 184:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
 "185
-[; ;main.c: 185: }
+[; ;main.c: 185:     Inicio();
+[e ( _Inicio ..  ]
+"186
+[; ;main.c: 186:     pantallaCarga();
+[e ( _pantallaCarga ..  ]
+"187
+[; ;main.c: 187:     Menu(0);
+[e ( _Menu (1 -> 0 `i ]
+"188
+[; ;main.c: 188: }
 [e :UE 562 ]
 }
 [a 10C 76 105 115 116 97 100 111 32 100 101 32 100 111 99 101 110 116 101 115 0 ]

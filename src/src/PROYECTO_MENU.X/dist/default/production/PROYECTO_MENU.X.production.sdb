@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F15244 ]
 [d frameptr 6 ]
-"34 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/drivers/i2c_simple_master.c
+"34 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/drivers/i2c_simple_master.c
 [e E360 . `uc
 I2C1_STOP 1
 I2C1_RESTART_READ 2
@@ -17,7 +17,7 @@ I2C1_NOERR 0
 I2C1_BUSY 1
 I2C1_FAIL 2
 ]
-"67 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/examples/i2c1_master_example.c
+"67 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/examples/i2c1_master_example.c
 [e E355 . `uc
 I2C1_NOERR 0
 I2C1_BUSY 1
@@ -31,7 +31,7 @@ I2C1_RESTART_WRITE 3
 I2C1_CONTINUE 4
 I2C1_RESET_LINK 5
 ]
-"146 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/i2c1_master.c
+"146 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/i2c1_master.c
 [e E3918 . `uc
 I2C1_IDLE 0
 I2C1_SEND_ADR_READ 1
@@ -76,7 +76,7 @@ I2C1_NULL 5
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"9 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\I2C_LCD.c
+"9 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\I2C_LCD.c
 [v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
 "19
 [v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
@@ -102,15 +102,15 @@ I2C1_NULL 5
 [v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
 "183
 [v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
-"9 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\main.c
+"12 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\main.c
 [v _Inicio Inicio `(v  1 e 1 0 ]
-"16
+"19
 [v _pantallaCarga pantallaCarga `(v  1 e 1 0 ]
-"29
+"32
 [v _Menu Menu `(v  1 e 1 0 ]
-"178
+"181
 [v _main main `(v  1 e 1 0 ]
-"34 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/drivers/i2c_simple_master.c
+"34 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/drivers/i2c_simple_master.c
 [v _wr1RegCompleteHandler wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
 "81
 [v _rd1RegCompleteHandler rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
@@ -120,7 +120,7 @@ I2C1_NULL 5
 [v _wr2RegCompleteHandler wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
 "185
 [v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
-"142 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/examples/i2c1_master_example.c
+"142 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/examples/i2c1_master_example.c
 [v _rd1RegCompleteHandler@i2c1_master_example$F143 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
 "149
 [v _rd2RegCompleteHandler@i2c1_master_example$F154 rd2RegCompleteHandler `(E360  1 s 1 rd2RegCompleteHandler ]
@@ -130,7 +130,7 @@ I2C1_NULL 5
 [v _wr2RegCompleteHandler@i2c1_master_example$F166 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
 "170
 [v _rdBlkRegCompleteHandler@i2c1_master_example$F177 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
-"167 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/i2c1_master.c
+"167 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 "176
 [v _I2C1_Open I2C1_Open `(E355  1 e 1 0 ]
@@ -226,13 +226,13 @@ I2C1_NULL 5
 [v _I2C1_MasterSetIrq I2C1_MasterSetIrq `T(v  1 s 1 I2C1_MasterSetIrq ]
 "650
 [v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
-"50 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/mcc.c
+"50 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "59
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "69
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 [s S1132 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
@@ -540,17 +540,17 @@ I2C1_NULL 5
 [v _TRISB4 TRISB4 `VEb  1 e 0 @156 ]
 "11723
 [v _TRISB6 TRISB6 `VEb  1 e 0 @158 ]
-"5 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\I2C_LCD.c
+"5 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\I2C_LCD.c
 [v _RS RS `uc  1 e 1 0 ]
 [v _i2c_add i2c_add `uc  1 e 1 0 ]
 [v _BackLight_State BackLight_State `uc  1 e 1 0 ]
-"5 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\main.c
+"8 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\main.c
 [v _clear clear `i  1 e 2 0 ]
-"6
+"9
 [v _nombres nombres `[8]*.25uc  1 e 16 0 ]
-"7
+"10
 [v _estadoBotones estadoBotones `[4]i  1 e 8 0 ]
-"146 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/i2c1_master.c
+"146 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/i2c1_master.c
 [v _i2c1_fsmStateTable i2c1_fsmStateTable `DC[16]*.37(E3918  1 e 32 0 ]
 [s S352 . 29 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E3918 1 state 1 26 `E355 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
 `uc 1 busy 1 28 :1:1 
@@ -559,19 +559,19 @@ I2C1_NULL 5
 ]
 "165
 [v _I2C1_Status I2C1_Status `S352  1 e 29 0 ]
-"178 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\main.c
+"181 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"185
+"188
 } 0
-"16
+"19
 [v _pantallaCarga pantallaCarga `(v  1 e 1 0 ]
 {
-"21
+"24
 [v pantallaCarga@i i `i  1 a 2 0 ]
-"27
+"30
 } 0
-"50 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/mcc.c
+"50 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "57
@@ -581,37 +581,37 @@ I2C1_NULL 5
 {
 "73
 } 0
-"55 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "117
 } 0
-"59 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/mcc.c
+"59 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "67
 } 0
-"167 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\mcc_generated_files/i2c1_master.c
+"167 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 {
 "174
 } 0
-"29 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\main.c
+"32 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\main.c
 [v _Menu Menu `(v  1 e 1 0 ]
 {
-"164
+"167
 [v Menu@i_1241 i `i  1 a 2 8 ]
-"151
+"154
 [v Menu@i_1240 i `i  1 a 2 6 ]
-"138
+"141
 [v Menu@i_1231 i `i  1 a 2 4 ]
-"125
+"128
 [v Menu@i i `i  1 a 2 2 ]
-"29
+"32
 [v Menu@entrada entrada `i  1 p 2 11 ]
-"177
+"180
 } 0
-"134 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\I2C_LCD.c
+"134 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\I2C_LCD.c
 [v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
 {
 "136
@@ -643,12 +643,12 @@ I2C1_NULL 5
 {
 "187
 } 0
-"9 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\main.c
+"12 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\main.c
 [v _Inicio Inicio `(v  1 e 1 0 ]
 {
-"14
+"17
 } 0
-"80 C:\Users\alexi\MPLABXProjects\PROYECTO_MENU.X\I2C_LCD.c
+"80 C:\Users\FURRUSCAR\Desktop\universidad\Quinto semestre\Electronica digital 2\proyecto final\src\PROYECTO_MENU.X\I2C_LCD.c
 [v _LCD_Init LCD_Init `(v  1 e 1 0 ]
 {
 [v LCD_Init@I2C_Add I2C_Add `uc  1 a 1 wreg ]

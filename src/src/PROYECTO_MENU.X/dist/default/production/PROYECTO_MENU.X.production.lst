@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Sun May 23 16:25:51 2021
+                                                                                               Mon May 24 12:12:39 2021
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	16F15244
@@ -1710,7 +1710,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1696 ;;
   1697 ;; *************** function _main *****************
   1698 ;; Defined at:
-  1699 ;;		line 178 in file "main.c"
+  1699 ;;		line 181 in file "main.c"
   1700 ;; Parameters:    Size  Location     Type
   1701 ;;		None
   1702 ;; Auto vars:     Size  Location     Type
@@ -1748,18 +1748,18 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1734                           ; Regs used in _main: [wreg-fsr0h+status,2+status,0+pclath+cstack]
   1735                           
   1736                           
-  1737                           ;main.c: 181:     SYSTEM_Initialize();
+  1737                           ;main.c: 184:     SYSTEM_Initialize();
   1738  0408  3183  23ED  3184   	fcall	_SYSTEM_Initialize
   1739                           
-  1740                           ;main.c: 182:     Inicio();
+  1740                           ;main.c: 185:     Inicio();
   1741  040B  3183  23CC  3184   	fcall	_Inicio
   1742  040E                     l2756:
   1743                           
-  1744                           ;main.c: 183:     pantallaCarga();
+  1744                           ;main.c: 186:     pantallaCarga();
   1745  040E  3184  24F5  3184   	fcall	_pantallaCarga
   1746  0411                     l2758:
   1747                           
-  1748                           ;main.c: 184:     Menu(0);
+  1748                           ;main.c: 187:     Menu(0);
   1749  0411  3000               	movlw	0
   1750  0412  00FB               	movwf	Menu@entrada
   1751  0413  00FC               	movwf	Menu@entrada+1
@@ -1772,7 +1772,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1758  04F5                     __ptext1:	
   1759 ;; *************** function _pantallaCarga *****************
   1760 ;; Defined at:
-  1761 ;;		line 16 in file "main.c"
+  1761 ;;		line 19 in file "main.c"
   1762 ;; Parameters:    Size  Location     Type
   1763 ;;		None
   1764 ;; Auto vars:     Size  Location     Type
@@ -1810,13 +1810,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1796                           ; Regs used in _pantallaCarga: [wreg-fsr0h+status,2+status,0+pclath+cstack]
   1797                           
   1798                           
-  1799                           ;main.c: 18:     LCD_Set_Cursor(1, 1);
+  1799                           ;main.c: 21:     LCD_Set_Cursor(1, 1);
   1800  04F5  01F6               	clrf	LCD_Set_Cursor@COL
   1801  04F6  0AF6               	incf	LCD_Set_Cursor@COL,f
   1802  04F7  3001               	movlw	1
   1803  04F8  3184  2498  3184   	fcall	_LCD_Set_Cursor
   1804                           
-  1805                           ;main.c: 19:     LCD_Write_String("Inicializando");
+  1805                           ;main.c: 22:     LCD_Write_String("Inicializando");
   1806  04FB  30B5               	movlw	low (STR_9| (0+32768))
   1807  04FC  00F6               	movwf	LCD_Write_String@Str
   1808  04FD  3088               	movlw	high (STR_9| (0+32768))
@@ -1824,7 +1824,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1810  04FF  3184  247B  3184   	fcall	_LCD_Write_String
   1811  0502                     l2564:
   1812                           
-  1813                           ;main.c: 21:     for (int i = 14; i < 18; i++)
+  1813                           ;main.c: 24:     for (int i = 14; i < 18; i++)
   1814  0502  300E               	movlw	14
   1815  0503  0140               	movlb	0	; select bank0
   1816  0504  00D9               	movwf	pantallaCarga@i
@@ -1832,7 +1832,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1818  0506  00DA               	movwf	pantallaCarga@i+1
   1819  0507                     l2570:
   1820                           
-  1821                           ;main.c: 22:     {;main.c: 23:         LCD_Set_Cursor(1, i);
+  1821                           ;main.c: 25:     {;main.c: 26:         LCD_Set_Cursor(1, i);
   1822  0507  0140               	movlb	0	; select bank0
   1823  0508  0859               	movf	pantallaCarga@i,w
   1824  0509  00FB               	movwf	??_pantallaCarga
@@ -1842,12 +1842,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1828  050D  3184  2498  3184   	fcall	_LCD_Set_Cursor
   1829  0510                     l2572:
   1830                           
-  1831                           ;main.c: 24:         LCD_Write_Char(punto);
+  1831                           ;main.c: 27:         LCD_Write_Char(punto);
   1832  0510  302E               	movlw	46
   1833  0511  3184  2466  3184   	fcall	_LCD_Write_Char
   1834  0514                     l2574:
   1835                           
-  1836                           ;main.c: 25:         _delay((unsigned long)((1000)*(4000000/4000.0)));
+  1836                           ;main.c: 28:         _delay((unsigned long)((1000)*(4000000/4000.0)));
   1837  0514  3006               	movlw	6
   1838  0515  00FC               	movwf	??_pantallaCarga+1
   1839  0516  3013               	movlw	19
@@ -1862,7 +1862,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1848  051E  2D19               	goto	u1087
   1849  051F                     l2576:
   1850                           
-  1851                           ;main.c: 26:     }
+  1851                           ;main.c: 29:     }
   1852  051F  3001               	movlw	1
   1853  0520  0140               	movlb	0	; select bank0
   1854  0521  07D9               	addwf	pantallaCarga@i,f
@@ -2273,7 +2273,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2259  05A5                     __ptext7:	
   2260 ;; *************** function _Menu *****************
   2261 ;; Defined at:
-  2262 ;;		line 29 in file "main.c"
+  2262 ;;		line 32 in file "main.c"
   2263 ;; Parameters:    Size  Location     Type
   2264 ;;  entrada         2   11[COMMON] int 
   2265 ;; Auto vars:     Size  Location     Type
@@ -2312,14 +2312,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2298  05A5                     l658:	
   2299                           ;incstack = 0
   2300                           ; Regs used in _Menu: [wreg-fsr0h+status,2+status,0+pclath+cstack]
-  2301                           ;main.c: 29: void Menu(int entrada);main.c: 30: {;main.c: 31:     while (1)
+  2301                           ;main.c: 32: void Menu(int entrada);main.c: 33: {;main.c: 34:     while (1)
   2302                           
   2303                           
-  2304                           ;main.c: 32:     {;main.c: 34:         switch (entrada)
+  2304                           ;main.c: 35:     {;main.c: 37:         switch (entrada)
   2305  05A5  2FD7               	goto	l2748
   2306  05A6                     l2580:
   2307                           
-  2308                           ;main.c: 38:                 if (clear == 0)
+  2308                           ;main.c: 41:                 if (clear == 0)
   2309  05A6  0140               	movlb	0	; select bank0
   2310  05A7  0845               	movf	_clear,w
   2311  05A8  0446               	iorwf	_clear+1,w
@@ -2331,11 +2331,11 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2317  05AD                     u840:
   2318  05AD                     l2582:
   2319                           
-  2320                           ;main.c: 39:                 {;main.c: 40:                     LCD_Clear();
+  2320                           ;main.c: 42:                 {;main.c: 43:                     LCD_Clear();
   2321  05AD  3183  23BA  3185   	fcall	_LCD_Clear
   2322  05B0                     l2584:
   2323                           
-  2324                           ;main.c: 41:                     clear = 1;
+  2324                           ;main.c: 44:                     clear = 1;
   2325  05B0  3001               	movlw	1
   2326  05B1  0140               	movlb	0	; select bank0
   2327  05B2  00C5               	movwf	_clear
@@ -2343,14 +2343,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2329  05B4  00C6               	movwf	_clear+1
   2330  05B5                     l2586:
   2331                           
-  2332                           ;main.c: 44:                 LCD_Set_Cursor(1, 1);
+  2332                           ;main.c: 47:                 LCD_Set_Cursor(1, 1);
   2333  05B5  01F6               	clrf	LCD_Set_Cursor@COL
   2334  05B6  0AF6               	incf	LCD_Set_Cursor@COL,f
   2335  05B7  3001               	movlw	1
   2336  05B8  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2337  05BB                     l2588:
   2338                           
-  2339                           ;main.c: 45:                 LCD_Write_String("Listado de docentes");
+  2339                           ;main.c: 48:                 LCD_Write_String("Listado de docentes");
   2340  05BB  3034               	movlw	low (STR_10| (0+32768))
   2341  05BC  00F6               	movwf	LCD_Write_String@Str
   2342  05BD  3088               	movlw	high (STR_10| (0+32768))
@@ -2358,14 +2358,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2344  05BF  3184  247B  3185   	fcall	_LCD_Write_String
   2345  05C2                     l2590:
   2346                           
-  2347                           ;main.c: 46:                 LCD_Set_Cursor(2, 1);
+  2347                           ;main.c: 49:                 LCD_Set_Cursor(2, 1);
   2348  05C2  01F6               	clrf	LCD_Set_Cursor@COL
   2349  05C3  0AF6               	incf	LCD_Set_Cursor@COL,f
   2350  05C4  3002               	movlw	2
   2351  05C5  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2352  05C8                     l2592:
   2353                           
-  2354                           ;main.c: 47:                 LCD_Write_String("disponibles...");
+  2354                           ;main.c: 50:                 LCD_Write_String("disponibles...");
   2355  05C8  307A               	movlw	low (STR_11| (0+32768))
   2356  05C9  00F6               	movwf	LCD_Write_String@Str
   2357  05CA  3088               	movlw	high (STR_11| (0+32768))
@@ -2373,7 +2373,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2359  05CC  3184  247B  3185   	fcall	_LCD_Write_String
   2360  05CF                     l2594:
   2361                           
-  2362                           ;main.c: 48:                 _delay((unsigned long)((5000)*(4000000/4000.0)));
+  2362                           ;main.c: 51:                 _delay((unsigned long)((5000)*(4000000/4000.0)));
   2363  05CF  301A               	movlw	26
   2364  05D0  0140               	movlb	0	; select bank0
   2365  05D1  00DA               	movwf	??_Menu+1
@@ -2390,16 +2390,16 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2376  05DB  0000               	nop
   2377  05DC                     l2596:
   2378                           
-  2379                           ;main.c: 49:                 clear = 0;
+  2379                           ;main.c: 52:                 clear = 0;
   2380  05DC  0140               	movlb	0	; select bank0
   2381  05DD  01C5               	clrf	_clear
   2382  05DE  01C6               	clrf	_clear+1
   2383  05DF                     l2598:
   2384  05DF                     l2600:	
-  2385                           ;main.c: 51:                 if (clear == 0)
+  2385                           ;main.c: 54:                 if (clear == 0)
   2386                           
   2387                           
-  2388                           ;main.c: 52:                 {;main.c: 53:                     entrada = 1;
+  2388                           ;main.c: 55:                 {;main.c: 56:                     entrada = 1;
   2389  05DF  3001               	movlw	1
   2390  05E0  00FB               	movwf	Menu@entrada
   2391  05E1  3000               	movlw	0
@@ -2407,7 +2407,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2393  05E3  2DA5               	goto	l658
   2394  05E4                     l2602:
   2395                           
-  2396                           ;main.c: 60:                 if (clear == 0)
+  2396                           ;main.c: 63:                 if (clear == 0)
   2397  05E4  0140               	movlb	0	; select bank0
   2398  05E5  0845               	movf	_clear,w
   2399  05E6  0446               	iorwf	_clear+1,w
@@ -2419,11 +2419,11 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2405  05EB                     u850:
   2406  05EB                     l2604:
   2407                           
-  2408                           ;main.c: 61:                 {;main.c: 62:                     LCD_Clear();
+  2408                           ;main.c: 64:                 {;main.c: 65:                     LCD_Clear();
   2409  05EB  3183  23BA  3185   	fcall	_LCD_Clear
   2410  05EE                     l2606:
   2411                           
-  2412                           ;main.c: 63:                     clear = 1;
+  2412                           ;main.c: 66:                     clear = 1;
   2413  05EE  3001               	movlw	1
   2414  05EF  0140               	movlb	0	; select bank0
   2415  05F0  00C5               	movwf	_clear
@@ -2431,14 +2431,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2417  05F2  00C6               	movwf	_clear+1
   2418  05F3                     l2608:
   2419                           
-  2420                           ;main.c: 66:                 LCD_Set_Cursor(1, 1);
+  2420                           ;main.c: 69:                 LCD_Set_Cursor(1, 1);
   2421  05F3  01F6               	clrf	LCD_Set_Cursor@COL
   2422  05F4  0AF6               	incf	LCD_Set_Cursor@COL,f
   2423  05F5  3001               	movlw	1
   2424  05F6  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2425  05F9                     l2610:
   2426                           
-  2427                           ;main.c: 67:                 LCD_Write_String(nombres[0]);
+  2427                           ;main.c: 70:                 LCD_Write_String(nombres[0]);
   2428  05F9  0140               	movlb	0	; select bank0
   2429  05FA  0848               	movf	_nombres+1,w
   2430  05FB  00F7               	movwf	LCD_Write_String@Str+1
@@ -2447,14 +2447,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2433  05FE  3184  247B  3185   	fcall	_LCD_Write_String
   2434  0601                     l2612:
   2435                           
-  2436                           ;main.c: 69:                 LCD_Set_Cursor(2, 1);
+  2436                           ;main.c: 72:                 LCD_Set_Cursor(2, 1);
   2437  0601  01F6               	clrf	LCD_Set_Cursor@COL
   2438  0602  0AF6               	incf	LCD_Set_Cursor@COL,f
   2439  0603  3002               	movlw	2
   2440  0604  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2441  0607                     l2614:
   2442                           
-  2443                           ;main.c: 70:                 LCD_Write_String(nombres[1]);
+  2443                           ;main.c: 73:                 LCD_Write_String(nombres[1]);
   2444  0607  0140               	movlb	0	; select bank0
   2445  0608  084A               	movf	(low ((_nombres| 0+2))+1),w
   2446  0609  00F7               	movwf	LCD_Write_String@Str+1
@@ -2463,14 +2463,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2449  060C  3184  247B  3185   	fcall	_LCD_Write_String
   2450  060F                     l2616:
   2451                           
-  2452                           ;main.c: 72:                 LCD_Set_Cursor(3, 1);
+  2452                           ;main.c: 75:                 LCD_Set_Cursor(3, 1);
   2453  060F  01F6               	clrf	LCD_Set_Cursor@COL
   2454  0610  0AF6               	incf	LCD_Set_Cursor@COL,f
   2455  0611  3003               	movlw	3
   2456  0612  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2457  0615                     l2618:
   2458                           
-  2459                           ;main.c: 73:                 LCD_Write_String(nombres[2]);
+  2459                           ;main.c: 76:                 LCD_Write_String(nombres[2]);
   2460  0615  0140               	movlb	0	; select bank0
   2461  0616  084C               	movf	(low ((_nombres| 0+4))+1),w
   2462  0617  00F7               	movwf	LCD_Write_String@Str+1
@@ -2479,14 +2479,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2465  061A  3184  247B  3185   	fcall	_LCD_Write_String
   2466  061D                     l2620:
   2467                           
-  2468                           ;main.c: 75:                 LCD_Set_Cursor(4, 1);
+  2468                           ;main.c: 78:                 LCD_Set_Cursor(4, 1);
   2469  061D  01F6               	clrf	LCD_Set_Cursor@COL
   2470  061E  0AF6               	incf	LCD_Set_Cursor@COL,f
   2471  061F  3004               	movlw	4
   2472  0620  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2473  0623                     l2622:
   2474                           
-  2475                           ;main.c: 76:                 LCD_Write_String(nombres[3]);
+  2475                           ;main.c: 79:                 LCD_Write_String(nombres[3]);
   2476  0623  0140               	movlb	0	; select bank0
   2477  0624  084E               	movf	(low ((_nombres| 0+6))+1),w
   2478  0625  00F7               	movwf	LCD_Write_String@Str+1
@@ -2495,7 +2495,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2481  0628  3184  247B  3185   	fcall	_LCD_Write_String
   2482  062B                     l2624:
   2483                           
-  2484                           ;main.c: 78:                 if(!PORTCbits.RC0)
+  2484                           ;main.c: 81:                 if(!PORTCbits.RC0)
   2485  062B  0140               	movlb	0	; select bank0
   2486  062C  180E               	btfsc	14,0	;volatile
   2487  062D  2E2F               	goto	u861
@@ -2505,13 +2505,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2491  0630                     u860:
   2492  0630                     l2626:
   2493                           
-  2494                           ;main.c: 79:                 {;main.c: 80:                     estadoBotones[0] = 1;
+  2494                           ;main.c: 82:                 {;main.c: 83:                     estadoBotones[0] = 1;
   2495  0630  3001               	movlw	1
   2496  0631  00BD               	movwf	_estadoBotones
   2497  0632  3000               	movlw	0
   2498  0633  00BE               	movwf	_estadoBotones+1
   2499                           
-  2500                           ;main.c: 81:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+  2500                           ;main.c: 84:                     _delay((unsigned long)((250)*(4000000/4000.0)));
   2501  0634  3002               	movlw	2
   2502  0635  0140               	movlb	0	; select bank0
   2503  0636  00DA               	movwf	??_Menu+1
@@ -2528,20 +2528,20 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2514  0640  3200               	nop2
   2515  0641                     l2628:
   2516                           
-  2517                           ;main.c: 82:                     clear = 0;
+  2517                           ;main.c: 85:                     clear = 0;
   2518  0641  0140               	movlb	0	; select bank0
   2519  0642  01C5               	clrf	_clear
   2520  0643  01C6               	clrf	_clear+1
   2521  0644                     l2630:
   2522                           
-  2523                           ;main.c: 83:                     entrada = 3;
+  2523                           ;main.c: 86:                     entrada = 3;
   2524  0644  3003               	movlw	3
   2525  0645  00FB               	movwf	Menu@entrada
   2526  0646  3000               	movlw	0
   2527  0647  00FC               	movwf	Menu@entrada+1
   2528  0648                     l2632:
   2529                           
-  2530                           ;main.c: 85:                 if(!PORTCbits.RC1)
+  2530                           ;main.c: 88:                 if(!PORTCbits.RC1)
   2531  0648  188E               	btfsc	14,1	;volatile
   2532  0649  2E4B               	goto	u871
   2533  064A  2E4C               	goto	u870
@@ -2550,13 +2550,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2536  064C                     u870:
   2537  064C                     l2634:
   2538                           
-  2539                           ;main.c: 86:                 {;main.c: 87:                     estadoBotones[1] = 1;
+  2539                           ;main.c: 89:                 {;main.c: 90:                     estadoBotones[1] = 1;
   2540  064C  3001               	movlw	1
   2541  064D  00BF               	movwf	_estadoBotones+2
   2542  064E  3000               	movlw	0
   2543  064F  00C0               	movwf	_estadoBotones+3
   2544                           
-  2545                           ;main.c: 88:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+  2545                           ;main.c: 91:                     _delay((unsigned long)((250)*(4000000/4000.0)));
   2546  0650  3002               	movlw	2
   2547  0651  0140               	movlb	0	; select bank0
   2548  0652  00DA               	movwf	??_Menu+1
@@ -2573,20 +2573,20 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2559  065C  3200               	nop2
   2560  065D                     l2636:
   2561                           
-  2562                           ;main.c: 89:                     clear = 0;
+  2562                           ;main.c: 92:                     clear = 0;
   2563  065D  0140               	movlb	0	; select bank0
   2564  065E  01C5               	clrf	_clear
   2565  065F  01C6               	clrf	_clear+1
   2566  0660                     l2638:
   2567                           
-  2568                           ;main.c: 90:                     entrada = 3;
+  2568                           ;main.c: 93:                     entrada = 3;
   2569  0660  3003               	movlw	3
   2570  0661  00FB               	movwf	Menu@entrada
   2571  0662  3000               	movlw	0
   2572  0663  00FC               	movwf	Menu@entrada+1
   2573  0664                     l2640:
   2574                           
-  2575                           ;main.c: 92:                 if(!PORTCbits.RC3)
+  2575                           ;main.c: 95:                 if(!PORTCbits.RC3)
   2576  0664  198E               	btfsc	14,3	;volatile
   2577  0665  2E67               	goto	u881
   2578  0666  2E68               	goto	u880
@@ -2595,13 +2595,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2581  0668                     u880:
   2582  0668                     l2642:
   2583                           
-  2584                           ;main.c: 93:                 {;main.c: 94:                     estadoBotones[2] = 1;
+  2584                           ;main.c: 96:                 {;main.c: 97:                     estadoBotones[2] = 1;
   2585  0668  3001               	movlw	1
   2586  0669  00C1               	movwf	_estadoBotones+4
   2587  066A  3000               	movlw	0
   2588  066B  00C2               	movwf	_estadoBotones+5
   2589                           
-  2590                           ;main.c: 95:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+  2590                           ;main.c: 98:                     _delay((unsigned long)((250)*(4000000/4000.0)));
   2591  066C  3002               	movlw	2
   2592  066D  0140               	movlb	0	; select bank0
   2593  066E  00DA               	movwf	??_Menu+1
@@ -2618,20 +2618,20 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2604  0678  3200               	nop2
   2605  0679                     l2644:
   2606                           
-  2607                           ;main.c: 96:                     clear = 0;
+  2607                           ;main.c: 99:                     clear = 0;
   2608  0679  0140               	movlb	0	; select bank0
   2609  067A  01C5               	clrf	_clear
   2610  067B  01C6               	clrf	_clear+1
   2611  067C                     l2646:
   2612                           
-  2613                           ;main.c: 97:                     entrada = 3;
+  2613                           ;main.c: 100:                     entrada = 3;
   2614  067C  3003               	movlw	3
   2615  067D  00FB               	movwf	Menu@entrada
   2616  067E  3000               	movlw	0
   2617  067F  00FC               	movwf	Menu@entrada+1
   2618  0680                     l2648:
   2619                           
-  2620                           ;main.c: 99:                 if(!PORTCbits.RC4)
+  2620                           ;main.c: 102:                 if(!PORTCbits.RC4)
   2621  0680  1A0E               	btfsc	14,4	;volatile
   2622  0681  2E83               	goto	u891
   2623  0682  2E84               	goto	u890
@@ -2640,13 +2640,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2626  0684                     u890:
   2627  0684                     l2650:
   2628                           
-  2629                           ;main.c: 100:                 {;main.c: 101:                     estadoBotones[3] = 1;
+  2629                           ;main.c: 103:                 {;main.c: 104:                     estadoBotones[3] = 1;
   2630  0684  3001               	movlw	1
   2631  0685  00C3               	movwf	_estadoBotones+6
   2632  0686  3000               	movlw	0
   2633  0687  00C4               	movwf	_estadoBotones+7
   2634                           
-  2635                           ;main.c: 102:                     _delay((unsigned long)((250)*(4000000/4000.0)));
+  2635                           ;main.c: 105:                     _delay((unsigned long)((250)*(4000000/4000.0)));
   2636  0688  3002               	movlw	2
   2637  0689  0140               	movlb	0	; select bank0
   2638  068A  00DA               	movwf	??_Menu+1
@@ -2663,13 +2663,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2649  0694  3200               	nop2
   2650  0695                     l2652:
   2651                           
-  2652                           ;main.c: 103:                     clear = 0;
+  2652                           ;main.c: 106:                     clear = 0;
   2653  0695  0140               	movlb	0	; select bank0
   2654  0696  01C5               	clrf	_clear
   2655  0697  01C6               	clrf	_clear+1
   2656  0698                     l2654:
   2657                           
-  2658                           ;main.c: 104:                     entrada = 3;
+  2658                           ;main.c: 107:                     entrada = 3;
   2659  0698  3003               	movlw	3
   2660  0699  00FB               	movwf	Menu@entrada
   2661  069A  3000               	movlw	0
@@ -2677,7 +2677,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2663  069C  2DA5               	goto	l658
   2664  069D                     l2656:
   2665                           
-  2666                           ;main.c: 111:                 if (clear == 0)
+  2666                           ;main.c: 114:                 if (clear == 0)
   2667  069D  0140               	movlb	0	; select bank0
   2668  069E  0845               	movf	_clear,w
   2669  069F  0446               	iorwf	_clear+1,w
@@ -2689,11 +2689,11 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2675  06A4                     u900:
   2676  06A4                     l2658:
   2677                           
-  2678                           ;main.c: 112:                 {;main.c: 113:                     LCD_Clear();
+  2678                           ;main.c: 115:                 {;main.c: 116:                     LCD_Clear();
   2679  06A4  3183  23BA  3185   	fcall	_LCD_Clear
   2680  06A7                     l2660:
   2681                           
-  2682                           ;main.c: 114:                     clear = 1;
+  2682                           ;main.c: 117:                     clear = 1;
   2683  06A7  3001               	movlw	1
   2684  06A8  0140               	movlb	0	; select bank0
   2685  06A9  00C5               	movwf	_clear
@@ -2701,14 +2701,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2687  06AB  00C6               	movwf	_clear+1
   2688  06AC                     l2662:
   2689                           
-  2690                           ;main.c: 117:                 LCD_Set_Cursor(1, 1);
+  2690                           ;main.c: 120:                 LCD_Set_Cursor(1, 1);
   2691  06AC  01F6               	clrf	LCD_Set_Cursor@COL
   2692  06AD  0AF6               	incf	LCD_Set_Cursor@COL,f
   2693  06AE  3001               	movlw	1
   2694  06AF  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2695  06B2                     l2664:
   2696                           
-  2697                           ;main.c: 118:                 LCD_Write_String("LLamando al docente");
+  2697                           ;main.c: 121:                 LCD_Write_String("LLamando al docente");
   2698  06B2  3020               	movlw	low (STR_12| (0+32768))
   2699  06B3  00F6               	movwf	LCD_Write_String@Str
   2700  06B4  3088               	movlw	high (STR_12| (0+32768))
@@ -2716,7 +2716,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2702  06B6  3184  247B  3185   	fcall	_LCD_Write_String
   2703  06B9                     l2666:
   2704                           
-  2705                           ;main.c: 120:                 if(estadoBotones[0] == 1)
+  2705                           ;main.c: 123:                 if(estadoBotones[0] == 1)
   2706  06B9  0140               	movlb	0	; select bank0
   2707  06BA  033D               	decf	_estadoBotones,w
   2708  06BB  043E               	iorwf	_estadoBotones+1,w
@@ -2728,13 +2728,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2714  06C0                     u910:
   2715  06C0                     l2668:
   2716                           
-  2717                           ;main.c: 121:                 {;main.c: 122:                     LCD_Set_Cursor(2, 1);
+  2717                           ;main.c: 124:                 {;main.c: 125:                     LCD_Set_Cursor(2, 1);
   2718  06C0  01F6               	clrf	LCD_Set_Cursor@COL
   2719  06C1  0AF6               	incf	LCD_Set_Cursor@COL,f
   2720  06C2  3002               	movlw	2
   2721  06C3  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2722                           
-  2723                           ;main.c: 123:                     LCD_Write_String(nombres[0]);
+  2723                           ;main.c: 126:                     LCD_Write_String(nombres[0]);
   2724  06C6  0140               	movlb	0	; select bank0
   2725  06C7  0848               	movf	_nombres+1,w
   2726  06C8  00F7               	movwf	LCD_Write_String@Str+1
@@ -2743,7 +2743,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2729  06CB  3184  247B  3185   	fcall	_LCD_Write_String
   2730  06CE                     l2670:
   2731                           
-  2732                           ;main.c: 125:                     for (int i = 0; i < 10; i++)
+  2732                           ;main.c: 128:                     for (int i = 0; i < 10; i++)
   2733  06CE  0140               	movlb	0	; select bank0
   2734  06CF  01DB               	clrf	Menu@i
   2735  06D0  01DC               	clrf	Menu@i+1
@@ -2765,7 +2765,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2751  06DD                     u934:
   2752  06DD                     l2678:
   2753                           
-  2754                           ;main.c: 128:                         _delay((unsigned long)((250)*(4000000/4000.0)));
+  2754                           ;main.c: 131:                         _delay((unsigned long)((250)*(4000000/4000.0)));
   2755  06DD  3002               	movlw	2
   2756  06DE  0140               	movlb	0	; select bank0
   2757  06DF  00DA               	movwf	??_Menu+1
@@ -2782,7 +2782,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2768  06E9  3200               	nop2
   2769  06EA                     l2680:
   2770                           
-  2771                           ;main.c: 129:                     }
+  2771                           ;main.c: 132:                     }
   2772  06EA  3001               	movlw	1
   2773  06EB  0140               	movlb	0	; select bank0
   2774  06EC  07DB               	addwf	Menu@i,f
@@ -2807,17 +2807,17 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2793  06FC                     u940:
   2794  06FC                     l2684:
   2795                           
-  2796                           ;main.c: 130:                     estadoBotones[0] = 0;
+  2796                           ;main.c: 133:                     estadoBotones[0] = 0;
   2797  06FC  0140               	movlb	0	; select bank0
   2798  06FD  01BD               	clrf	_estadoBotones
   2799  06FE  01BE               	clrf	_estadoBotones+1
   2800                           
-  2801                           ;main.c: 131:                     entrada = 0;
+  2801                           ;main.c: 134:                     entrada = 0;
   2802  06FF  01FB               	clrf	Menu@entrada
   2803  0700  01FC               	clrf	Menu@entrada+1
   2804  0701                     l2686:
   2805                           
-  2806                           ;main.c: 133:                 if(estadoBotones[1] == 1)
+  2806                           ;main.c: 136:                 if(estadoBotones[1] == 1)
   2807  0701  033F               	decf	_estadoBotones+2,w
   2808  0702  0440               	iorwf	_estadoBotones+3,w
   2809  0703  1D03               	btfss	3,2
@@ -2828,13 +2828,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2814  0707                     u950:
   2815  0707                     l2688:
   2816                           
-  2817                           ;main.c: 134:                 {;main.c: 135:                     LCD_Set_Cursor(2, 1);
+  2817                           ;main.c: 137:                 {;main.c: 138:                     LCD_Set_Cursor(2, 1);
   2818  0707  01F6               	clrf	LCD_Set_Cursor@COL
   2819  0708  0AF6               	incf	LCD_Set_Cursor@COL,f
   2820  0709  3002               	movlw	2
   2821  070A  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2822                           
-  2823                           ;main.c: 136:                     LCD_Write_String(nombres[1]);
+  2823                           ;main.c: 139:                     LCD_Write_String(nombres[1]);
   2824  070D  0140               	movlb	0	; select bank0
   2825  070E  084A               	movf	(low ((_nombres| 0+2))+1),w
   2826  070F  00F7               	movwf	LCD_Write_String@Str+1
@@ -2843,7 +2843,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2829  0712  3184  247B  3185   	fcall	_LCD_Write_String
   2830  0715                     l2690:
   2831                           
-  2832                           ;main.c: 138:                     for (int i = 0; i < 10; i++)
+  2832                           ;main.c: 141:                     for (int i = 0; i < 10; i++)
   2833  0715  0140               	movlb	0	; select bank0
   2834  0716  01DD               	clrf	Menu@i_1231
   2835  0717  01DE               	clrf	Menu@i_1231+1
@@ -2865,7 +2865,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2851  0724                     u974:
   2852  0724                     l2698:
   2853                           
-  2854                           ;main.c: 141:                         _delay((unsigned long)((250)*(4000000/4000.0)));
+  2854                           ;main.c: 144:                         _delay((unsigned long)((250)*(4000000/4000.0)));
   2855  0724  3002               	movlw	2
   2856  0725  0140               	movlb	0	; select bank0
   2857  0726  00DA               	movwf	??_Menu+1
@@ -2882,7 +2882,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2868  0730  3200               	nop2
   2869  0731                     l2700:
   2870                           
-  2871                           ;main.c: 142:                     }
+  2871                           ;main.c: 145:                     }
   2872  0731  3001               	movlw	1
   2873  0732  0140               	movlb	0	; select bank0
   2874  0733  07DD               	addwf	Menu@i_1231,f
@@ -2907,17 +2907,17 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2893  0743                     u980:
   2894  0743                     l2704:
   2895                           
-  2896                           ;main.c: 143:                     estadoBotones[1] = 0;
+  2896                           ;main.c: 146:                     estadoBotones[1] = 0;
   2897  0743  0140               	movlb	0	; select bank0
   2898  0744  01BF               	clrf	_estadoBotones+2
   2899  0745  01C0               	clrf	_estadoBotones+3
   2900                           
-  2901                           ;main.c: 144:                     entrada = 0;
+  2901                           ;main.c: 147:                     entrada = 0;
   2902  0746  01FB               	clrf	Menu@entrada
   2903  0747  01FC               	clrf	Menu@entrada+1
   2904  0748                     l2706:
   2905                           
-  2906                           ;main.c: 146:                 if(estadoBotones[2] == 1)
+  2906                           ;main.c: 149:                 if(estadoBotones[2] == 1)
   2907  0748  0341               	decf	_estadoBotones+4,w
   2908  0749  0442               	iorwf	_estadoBotones+5,w
   2909  074A  1D03               	btfss	3,2
@@ -2928,13 +2928,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2914  074E                     u990:
   2915  074E                     l2708:
   2916                           
-  2917                           ;main.c: 147:                 {;main.c: 148:                     LCD_Set_Cursor(2, 1);
+  2917                           ;main.c: 150:                 {;main.c: 151:                     LCD_Set_Cursor(2, 1);
   2918  074E  01F6               	clrf	LCD_Set_Cursor@COL
   2919  074F  0AF6               	incf	LCD_Set_Cursor@COL,f
   2920  0750  3002               	movlw	2
   2921  0751  3184  2498  3185   	fcall	_LCD_Set_Cursor
   2922                           
-  2923                           ;main.c: 149:                     LCD_Write_String(nombres[2]);
+  2923                           ;main.c: 152:                     LCD_Write_String(nombres[2]);
   2924  0754  0140               	movlb	0	; select bank0
   2925  0755  084C               	movf	(low ((_nombres| 0+4))+1),w
   2926  0756  00F7               	movwf	LCD_Write_String@Str+1
@@ -2943,7 +2943,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2929  0759  3184  247B  3185   	fcall	_LCD_Write_String
   2930  075C                     l2710:
   2931                           
-  2932                           ;main.c: 151:                     for (int i = 0; i < 10; i++)
+  2932                           ;main.c: 154:                     for (int i = 0; i < 10; i++)
   2933  075C  0140               	movlb	0	; select bank0
   2934  075D  01DF               	clrf	Menu@i_1240
   2935  075E  01E0               	clrf	Menu@i_1240+1
@@ -2965,7 +2965,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2951  076B                     u1014:
   2952  076B                     l2718:
   2953                           
-  2954                           ;main.c: 154:                         _delay((unsigned long)((250)*(4000000/4000.0)));
+  2954                           ;main.c: 157:                         _delay((unsigned long)((250)*(4000000/4000.0)));
   2955  076B  3002               	movlw	2
   2956  076C  0140               	movlb	0	; select bank0
   2957  076D  00DA               	movwf	??_Menu+1
@@ -2982,7 +2982,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2968  0777  3200               	nop2
   2969  0778                     l2720:
   2970                           
-  2971                           ;main.c: 155:                     }
+  2971                           ;main.c: 158:                     }
   2972  0778  3001               	movlw	1
   2973  0779  0140               	movlb	0	; select bank0
   2974  077A  07DF               	addwf	Menu@i_1240,f
@@ -3007,17 +3007,17 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2993  078A                     u1020:
   2994  078A                     l2724:
   2995                           
-  2996                           ;main.c: 156:                     estadoBotones[2] = 0;
+  2996                           ;main.c: 159:                     estadoBotones[2] = 0;
   2997  078A  0140               	movlb	0	; select bank0
   2998  078B  01C1               	clrf	_estadoBotones+4
   2999  078C  01C2               	clrf	_estadoBotones+5
   3000                           
-  3001                           ;main.c: 157:                     entrada = 0;
+  3001                           ;main.c: 160:                     entrada = 0;
   3002  078D  01FB               	clrf	Menu@entrada
   3003  078E  01FC               	clrf	Menu@entrada+1
   3004  078F                     l2726:
   3005                           
-  3006                           ;main.c: 159:                 if(estadoBotones[3] == 1)
+  3006                           ;main.c: 162:                 if(estadoBotones[3] == 1)
   3007  078F  0343               	decf	_estadoBotones+6,w
   3008  0790  0444               	iorwf	_estadoBotones+7,w
   3009  0791  1D03               	btfss	3,2
@@ -3028,13 +3028,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3014  0795                     u1030:
   3015  0795                     l2728:
   3016                           
-  3017                           ;main.c: 160:                 {;main.c: 161:                     LCD_Set_Cursor(2, 1);
+  3017                           ;main.c: 163:                 {;main.c: 164:                     LCD_Set_Cursor(2, 1);
   3018  0795  01F6               	clrf	LCD_Set_Cursor@COL
   3019  0796  0AF6               	incf	LCD_Set_Cursor@COL,f
   3020  0797  3002               	movlw	2
   3021  0798  3184  2498  3185   	fcall	_LCD_Set_Cursor
   3022                           
-  3023                           ;main.c: 162:                     LCD_Write_String(nombres[3]);
+  3023                           ;main.c: 165:                     LCD_Write_String(nombres[3]);
   3024  079B  0140               	movlb	0	; select bank0
   3025  079C  084E               	movf	(low ((_nombres| 0+6))+1),w
   3026  079D  00F7               	movwf	LCD_Write_String@Str+1
@@ -3043,7 +3043,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3029  07A0  3184  247B  3185   	fcall	_LCD_Write_String
   3030  07A3                     l2730:
   3031                           
-  3032                           ;main.c: 164:                     for (int i = 0; i < 10; i++)
+  3032                           ;main.c: 167:                     for (int i = 0; i < 10; i++)
   3033  07A3  0140               	movlb	0	; select bank0
   3034  07A4  01E1               	clrf	Menu@i_1241
   3035  07A5  01E2               	clrf	Menu@i_1241+1
@@ -3065,7 +3065,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3051  07B2                     u1054:
   3052  07B2                     l2738:
   3053                           
-  3054                           ;main.c: 167:                         _delay((unsigned long)((250)*(4000000/4000.0)));
+  3054                           ;main.c: 170:                         _delay((unsigned long)((250)*(4000000/4000.0)));
   3055  07B2  3002               	movlw	2
   3056  07B3  0140               	movlb	0	; select bank0
   3057  07B4  00DA               	movwf	??_Menu+1
@@ -3082,7 +3082,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3068  07BE  3200               	nop2
   3069  07BF                     l2740:
   3070                           
-  3071                           ;main.c: 168:                     }
+  3071                           ;main.c: 171:                     }
   3072  07BF  3001               	movlw	1
   3073  07C0  0140               	movlb	0	; select bank0
   3074  07C1  07E1               	addwf	Menu@i_1241,f
@@ -3107,12 +3107,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3093  07D1                     u1060:
   3094  07D1                     l2744:
   3095                           
-  3096                           ;main.c: 169:                     estadoBotones[3] = 0;
+  3096                           ;main.c: 172:                     estadoBotones[3] = 0;
   3097  07D1  0140               	movlb	0	; select bank0
   3098  07D2  01C3               	clrf	_estadoBotones+6
   3099  07D3  01C4               	clrf	_estadoBotones+7
   3100                           
-  3101                           ;main.c: 170:                     entrada = 0;
+  3101                           ;main.c: 173:                     entrada = 0;
   3102  07D4  01FB               	clrf	Menu@entrada
   3103  07D5  01FC               	clrf	Menu@entrada+1
   3104  07D6  2DA5               	goto	l658
@@ -3497,7 +3497,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3478  03CC                     __ptext12:	
   3479 ;; *************** function _Inicio *****************
   3480 ;; Defined at:
-  3481 ;;		line 9 in file "main.c"
+  3481 ;;		line 12 in file "main.c"
   3482 ;; Parameters:    Size  Location     Type
   3483 ;;		None
   3484 ;; Auto vars:     Size  Location     Type
@@ -3534,10 +3534,10 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3515                           ; Regs used in _Inicio: [wreg+status,2+status,0+pclath+cstack]
   3516                           
   3517                           
-  3518                           ;main.c: 11:     I2C_Master_Init();
+  3518                           ;main.c: 14:     I2C_Master_Init();
   3519  03CC  3183  23D6  3183   	fcall	_I2C_Master_Init
   3520                           
-  3521                           ;main.c: 12:     LCD_Init(0x4E);
+  3521                           ;main.c: 15:     LCD_Init(0x4E);
   3522  03CF  304E               	movlw	78
   3523  03D0  3185  2532  3183   	fcall	_LCD_Init
   3524  03D3                     l2560:
@@ -4784,7 +4784,7 @@ SFR63                0      0       0      64        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Sun May 23 16:25:51 2021
+Symbol Table                                                                                   Mon May 24 12:12:39 2021
 
                                               _RS 007D                                               l250 04F4  
                                              l610 03AD                                               l613 039B  

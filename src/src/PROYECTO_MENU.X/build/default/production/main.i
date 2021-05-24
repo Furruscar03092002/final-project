@@ -7,6 +7,9 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
+
+
+
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\\pic\\include\\xc.h" 1 3
@@ -6302,7 +6305,7 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 96 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 1 "main.c" 2
+# 4 "main.c" 2
 
 # 1 "./I2C_LCD.h" 1
 # 33 "./I2C_LCD.h"
@@ -6330,7 +6333,7 @@ void noBacklight();
 void LCD_SR();
 void LCD_SL();
 void LCD_Clear();
-# 2 "main.c" 2
+# 5 "main.c" 2
 
 
 char punto = '.';

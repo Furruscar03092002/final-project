@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.32\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\PROYECTO_MENU.X.production.sym \
   --cmf=dist/default/production\PROYECTO_MENU.X.production.cmf -z \
-  -Q16F15244 -oC:\Users\alexi\AppData\Local\Temp\xcAs69g.4 \
+  -Q16F15244 -oC:\Users\FURRUS~1\AppData\Local\Temp\xcAs3qo.4 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/PROYECTO_MENU.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02044h-021EFh -pstack=STACK \
@@ -40,7 +40,7 @@ Linker command line:
   -ACONFIG=08007h-0800Bh -DCONFIG=2 -AIDLOC=08000h-08003h -DIDLOC=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\alexi\AppData\Local\Temp\xcAs69g.o \
+  -pfunctab=ENTRY -k C:\Users\FURRUS~1\AppData\Local\Temp\xcAs3qo.o \
   dist/default/production\PROYECTO_MENU.X.production.o 
 
 Object code version is 3.11
@@ -50,7 +50,7 @@ Machine type is 16F15244
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\alexi\AppData\Local\Temp\xcAs69g.o
+C:\Users\FURRUS~1\AppData\Local\Temp\xcAs3qo.o
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        5        0       4

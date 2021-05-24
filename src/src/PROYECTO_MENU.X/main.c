@@ -1,3 +1,6 @@
+/// Hugo Mario Rodríguez Mendoza 2420191008
+/// Juan Jose Ardila Castiblanco 2420191028
+
 #include "mcc_generated_files/mcc.h"
 #include "I2C_LCD.h"
 
