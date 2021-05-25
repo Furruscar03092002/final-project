@@ -27,5 +27,7 @@ In the actually the teacher from the university of Ibegué, when are in the teac
 * ![Modulo-I2C-LCD-2-x16-La-Casa-de-la-Banda](https://user-images.githubusercontent.com/80794223/119575629-f93c3900-bd7c-11eb-9de4-bea7c7a9098f.jpg)
 # setup
 ![esquematico](https://user-images.githubusercontent.com/80794223/119578894-fba19180-bd82-11eb-9fe9-7b146c0cbe1d.jpeg)
+# How to use
+The display is out from the room, when the student goes for the advisory, select the teacher with the push buttons, when the student select the teacher, in the room a lED turn on witht the name of the teacher, with this the teacher goes out to see with the student.
 
 
