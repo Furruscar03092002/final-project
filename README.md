@@ -26,5 +26,7 @@ In the actually the teacher from the university of Ibegué, when are in the teac
  * ![LCD](https://user-images.githubusercontent.com/80794223/119575601-ed507700-bd7c-11eb-9c30-8a2335cdb73c.jpg)
 * ![Modulo-I2C-LCD-2-x16-La-Casa-de-la-Banda](https://user-images.githubusercontent.com/80794223/119575629-f93c3900-bd7c-11eb-9de4-bea7c7a9098f.jpg)
 # setup
+![esquematico](https://user-images.githubusercontent.com/80794223/119578894-fba19180-bd82-11eb-9fe9-7b146c0cbe1d.jpeg)
+
 # how to use
 
