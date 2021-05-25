@@ -21,8 +21,6 @@ In the actually the teacher from the university of Ibegué, when are in the teac
  * module i2c
  
  ![PIC](https://user-images.githubusercontent.com/80794223/119384160-e7c63480-bc89-11eb-97f0-012db99b9400.png)
- http://ww1.microchip.com/downloads/en/DeviceDoc/PIC16F15213-14-23-24-43-44-Data-Sheet-DS40002195B.pdf
- http://ww1.microchip.com/downloads/en/DeviceDoc/PIC16F15244-Curiosity-Nano-Hardware-User-Guide-DS50003045A.pdf
 ![micro USB](https://user-images.githubusercontent.com/80794223/119575617-f3465800-bd7c-11eb-800f-4748e81d47db.jpg)
 ![boton](https://user-images.githubusercontent.com/80794223/119575625-f5a8b200-bd7c-11eb-91ef-907c841f6e92.jpg)
  ![LCD](https://user-images.githubusercontent.com/80794223/119575601-ed507700-bd7c-11eb-9c30-8a2335cdb73c.jpg)
