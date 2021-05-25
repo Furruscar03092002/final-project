@@ -20,9 +20,9 @@ In the actually the teacher from the university of Ibegué, when are in the teac
  * LCD Display 4x20
  * module i2c
  
- ![PIC](https://user-images.githubusercontent.com/80794223/119384160-e7c63480-bc89-11eb-97f0-012db99b9400.png)
-![micro USB](https://user-images.githubusercontent.com/80794223/119575617-f3465800-bd7c-11eb-800f-4748e81d47db.jpg)
-![boton](https://user-images.githubusercontent.com/80794223/119575625-f5a8b200-bd7c-11eb-91ef-907c841f6e92.jpg)
- ![LCD](https://user-images.githubusercontent.com/80794223/119575601-ed507700-bd7c-11eb-9c30-8a2335cdb73c.jpg)
-![Modulo-I2C-LCD-2-x16-La-Casa-de-la-Banda](https://user-images.githubusercontent.com/80794223/119575629-f93c3900-bd7c-11eb-9de4-bea7c7a9098f.jpg)
+ * ![PIC](https://user-images.githubusercontent.com/80794223/119384160-e7c63480-bc89-11eb-97f0-012db99b9400.png)
+* ![micro USB](https://user-images.githubusercontent.com/80794223/119575617-f3465800-bd7c-11eb-800f-4748e81d47db.jpg)
+* ![boton](https://user-images.githubusercontent.com/80794223/119575625-f5a8b200-bd7c-11eb-91ef-907c841f6e92.jpg)
+ * ![LCD](https://user-images.githubusercontent.com/80794223/119575601-ed507700-bd7c-11eb-9c30-8a2335cdb73c.jpg)
+* ![Modulo-I2C-LCD-2-x16-La-Casa-de-la-Banda](https://user-images.githubusercontent.com/80794223/119575629-f93c3900-bd7c-11eb-9de4-bea7c7a9098f.jpg)
 
