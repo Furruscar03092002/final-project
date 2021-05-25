@@ -28,5 +28,4 @@ In the actually the teacher from the university of Ibegué, when are in the teac
 # setup
 ![esquematico](https://user-images.githubusercontent.com/80794223/119578894-fba19180-bd82-11eb-9fe9-7b146c0cbe1d.jpeg)
 
-# how to use
 
