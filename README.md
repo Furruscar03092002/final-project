@@ -1,15 +1,25 @@
 
-# final-project
-En la realidad el docente de la universidad de Ibegué, cuando están en el aula del docente necesitan enfocarse en sus proyectos, pero la logística en la asesoría está mal, los alumnos golpean la puerta a cada momento buscando al docente, pero esto, desconcentran al profesores, entonces en este proyecto necesitamos cómo podemos ordenar la asesoría, en un orden donde el profesor no necesite estar cada momento para ver si es él quien debe dar asesoría, con esta solución no es necesario que ambos lados interactúen. Para resolver la problemática diseñamos un circuito del prototipo, usamos unos diodos led, un LCD, el PIC 16F15244 y unos pulsadores, la idea es que, cuando un alumno busca un profesor, todo el mundo sabe para qué profesor es el estudiante, por lo que frente a la sala del maestro está la pantalla LCD con algunos botones, el estudiante buscará al maestro, seleccionará quién está buscando, en el otro lado hay una mesa con los LEDS, cada LED representa a un maestro, cuando un El alumno va por un aviso, encontraron el LCD y buscan al maestro cuando lo encontraron, seleccionan y el maestro ve la tabla, sabe que es para él porque su LED está encendido, entonces va por su alumno.
+# ADVISORY CONTROL
+In the actually the teacher from the university of Ibegué, when are in the teacher’s room they needs focus in they projects, but the logistic in the advisory is badly, the students knocking the door every moment looking for the teacher, but this, disconcentrate the teachers, so in this project we need how we can order the advisory, in a order where the teacher don’t need up every moment to see if  is he that must give advisory, with this solution both sides don’t need interact. To resolve the problematic, we design a circuit of the prototype, we use some diode led, a LCD, the PIC 16F15244 and some push buttons, the idea is,  when a student is looking for a teacher, everyone knows for what teacher is the student, so in front of the teacher’s room is the LCD with some buttons, the student will looking for the teacher, select who is looking for, in the other side there is a table with the LEDS, every LED represents a teacher, when a student goes for a advisory, they found the LCD and they search for the teacher when they found, select and the teacher see the table, he knows that is for he because his LED is in on, so he goes for his student.
 
-# Software utilizado
+# Software used
 * https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide
 * https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-ecosystem-downloads-archive
 * https://www.microchip.com/en-us/development-tools-tools-and-software/embedded-software-center/mplab-code-configurator
 * https://www.microchip.com/forums/f249.aspx
 * https://packs.download.microchip.com/
 
- # Hadware utilizado
+ # Hadware used
+ * PIC16F15244 Curiosity Nano
+ * Micro-USB to USB 2.0 cable
+ * Push button
+ * Resistance 330
+ * Resistance 1k
+ * Jumpers
+ * Protoboard
+ * LCD Display 4x20
+ * module i2c
+ 
  ![PIC](https://user-images.githubusercontent.com/80794223/119384160-e7c63480-bc89-11eb-97f0-012db99b9400.png)
  http://ww1.microchip.com/downloads/en/DeviceDoc/PIC16F15213-14-23-24-43-44-Data-Sheet-DS40002195B.pdf
  http://ww1.microchip.com/downloads/en/DeviceDoc/PIC16F15244-Curiosity-Nano-Hardware-User-Guide-DS50003045A.pdf
